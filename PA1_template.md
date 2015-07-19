@@ -4,6 +4,18 @@
 
 ## Loading and preprocessing the data
 
+```r
+library(dplyr)
+library(ggplot2)
+library(lattice)
+#import data
+activity <- read.csv("activity.csv", colClasses = "character")
+#cast steps and interval as integers
+#remove NA from steps
+activity$steps<-as.integer(activity$steps)
+activity$interval<-as.integer(activity$interval)
+activity$date<-as.Date(activity$date)
+```
 ## What is mean total number of steps taken per day?
 
 ```r
