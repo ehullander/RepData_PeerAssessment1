@@ -114,8 +114,8 @@ summarise(subset(activity,is.na(steps)),n())</code></pre>
 <pre><code>##    n()
 ## 1 2304</code></pre>
 </div>
-<div id="imputing-missing-values" class="section level2">
-<h2>Imputing missing values</h2>
+<div id="inputing-missing-values" class="section level2">
+<h2>Inputing missing values</h2>
 <pre class="r"><code>#replace NAs with average values per five minute interval &quot;totsint&quot;
 replacement1&lt;-select(filter(inner_join(activity,totsint),is.na(steps)),steps=mean.steps.,date,interval)</code></pre>
 <pre><code>## Joining by: &quot;interval&quot;</code></pre>

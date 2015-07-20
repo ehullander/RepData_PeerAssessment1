@@ -78,7 +78,7 @@ summarise(subset(activity,is.na(steps)),n())
 ```
 
 
-## Imputing missing values
+## Inputing missing values
 
 ```r
 #replace NAs with average values per five minute interval "totsint"

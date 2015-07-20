@@ -49,7 +49,7 @@ summarise(subset(activity,is.na(steps)),n())
 ````
 
 
-## Imputing missing values
+## Inputing missing values
 ```{r}
 #replace NAs with average values per five minute interval "totsint"
 replacement1<-select(filter(inner_join(activity,totsint),is.na(steps)),steps=mean.steps.,date,interval)
